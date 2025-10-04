@@ -1,0 +1,21 @@
+import java.util.scanner
+
+public class GradeOrNot {
+    
+    public static void main(String[] args) throws Exception {
+        Scanner scanner =new Scanner (System.in);
+        System.out.println("enter your score");
+        double score = scanner.nextDouble();
+        
+        if (score >= 70 && score <= 100) {
+            System.out.println("pass");
+        }else if (score <= 70 && score>= 0) {
+            System.out.println("fail");
+        }else{
+            System.out.println("you put invalid number,only accept 0-100");
+        }
+        scanner.close();
+        }
+        }
+    }
+}
